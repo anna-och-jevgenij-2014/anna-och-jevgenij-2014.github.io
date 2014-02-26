@@ -1,0 +1,32 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    padding-top: 70px;
+    background-color: #F3F1E5;
+}
+
+.box{
+    padding: 20px;
+    height: 286px;
+    color: #FFFFFF;
+}
+
+.box.color-1{
+    background-color: #B83229;
+}
+.box.color-2{
+    background-color: #75B2B7;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 920px;
+    }
+
+}
