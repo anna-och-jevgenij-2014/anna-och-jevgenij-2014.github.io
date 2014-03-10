@@ -1,3 +1,12 @@
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 920px;
+    }
+
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -8,11 +17,23 @@
 body {
     padding-top: 70px;
     background-color: #F3F1E5;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar-outer{
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .box{
     padding: 20px;
     height: 286px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.box.box-large{
+    height: 592px;
     color: #FFFFFF;
 }
 
@@ -23,10 +44,6 @@ body {
     background-color: #75B2B7;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 920px;
-    }
-
+.box.map{
+    padding: 5px;
 }
