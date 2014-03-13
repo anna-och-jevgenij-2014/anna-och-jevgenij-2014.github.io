@@ -14,10 +14,34 @@
     padding: 0.2em 0;
 }
 
+h1, h2, h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 0px;
+}
+
 body {
     padding-top: 70px;
     background-color: #F3F1E5;
     font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    padding: 50px;
+}
+
+.header h1{
+    margin-top: 20px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 10em;
+    color: #B83229;
+}
+
+.header h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4em;
+    color: #B83229;
+    text-align: right;
+    margin-top: -0.4em;
 }
 
 .navbar-outer{
