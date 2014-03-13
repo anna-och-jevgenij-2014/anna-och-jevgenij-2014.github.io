@@ -20,7 +20,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -41,11 +41,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="glyphicon glyphicon-home"> Välkomna!</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-heart"> Bröllopet</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-calendar"> Tid</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-map-marker"> Plats</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-envelope"> OSA</a></li>
+                        <li><a href="#welcome" class="glyphicon glyphicon-home"> Välkomna!</a></li>
+                        <li><a href="#wedding" class="glyphicon glyphicon-heart"> Bröllopet</a></li>
+                        <li><a href="#time" class="glyphicon glyphicon-calendar"> Tid</a></li>
+                        <li><a href="#place" class="glyphicon glyphicon-map-marker"> Plats</a></li>
+                        <li><a href="#osa" class="glyphicon glyphicon-envelope"> OSA</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -53,7 +53,7 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row" id="welcome">
                 <div class="col-md-12 header">
                     <h1>Vårt Bröllop</h1>
                     <h2>Anna &amp; Jevgenij</h2>
@@ -84,7 +84,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" id="wedding">
                 <div class="col-md-4">
                     <section class="box images-2-1"></section>
                 </div>
@@ -146,7 +146,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" id="time">
                 <div class="col-md-8">
                     <section class="box images-5-1"></section>
                 </div>
@@ -158,7 +158,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row"  id="place">
                 <div class="col-md-8">
                     <section class="box color-1 lead">
                         <h1>Tid</h1>
@@ -261,7 +261,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" id="osa">
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12">
@@ -346,6 +346,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="libs/jquery.backstretch/js/jquery.backstretch.min.js"></script>
+        <script src="libs/jquery.smooth-scroll/js/jquery.smooth-scroll.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

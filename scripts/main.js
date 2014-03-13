@@ -20,4 +20,8 @@ $(".images-7-1").backstretch("http://placehold.it/300x300");
 $(".images-8-1").backstretch("http://placehold.it/300x300");
 
 
-$('.btn').button();
+$(".btn").button();
+
+$(".navbar a").smoothScroll({
+    offset: 50
+});
