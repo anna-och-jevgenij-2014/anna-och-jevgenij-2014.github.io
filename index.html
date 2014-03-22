@@ -286,7 +286,7 @@
                     <section class="box box-large color-1">
 
 
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" id="reply-form">
                             <fieldset>
 
                                 <!-- Form Name -->
@@ -297,6 +297,7 @@
                                 <hr>
                                 <!-- Text input-->
                                 <div class="form-group">
+                                    <input id="email" name="email" type="text" placeholder="email">
                                     <label class="col-md-12" for="name">Gäst(er):</label>
                                     <div class="col-md-12">
                                         <input id="name" name="name" type="text" placeholder="Era/Ditt Namn" class="form-control input-md" required="">
@@ -308,11 +309,11 @@
                                     <label class="col-md-12" for="svar-btn">Svar:</label>
                                     <div class="col-md-12" id="svar-btn">
                                         <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                            <label class="btn btn-success">
-                                                <input type="radio" name="svar" id="option-yes">Ja! Vi / jag kommer.
+                                            <label class="btn btn-success active">
+                                                <input type="radio" name="svar" id="option-yes" value="Yes">Ja! Vi / jag kommer.
                                             </label>
-                                            <label class="btn btn-warning">
-                                                <input type="radio" name="svar" id="option-no">Tyvärr, vi / jag kan inte.
+                                            <label class="btn btn-danger">
+                                                <input type="radio" name="svar" id="option-no" value="No">Tyvärr, vi / jag kan inte.
                                             </label>
                                         </div>
                                     </div>
@@ -330,7 +331,7 @@
                                 <!-- Button -->
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <button id="submit" name="submit" class="btn btn-primary btn-block">Svara</button>
+                                        <button id="submit" name="submit" class="btn btn-primary btn-block" data-loading-text="Skickar svar ...">Svara</button>
                                     </div>
                                 </div>
 
@@ -347,6 +348,9 @@
         <script src="libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="libs/jquery.backstretch/js/jquery.backstretch.min.js"></script>
         <script src="libs/jquery.smooth-scroll/js/jquery.smooth-scroll.min.js"></script>
+
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

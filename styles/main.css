@@ -71,3 +71,10 @@ body {
 .box.map{
     padding: 5px;
 }
+
+#email{
+    position: absolute;
+    left: -3000px;
+
+
+}
