@@ -46,7 +46,8 @@ $('#reply-form').submit(function(){
     var WeddingReply = Parse.Object.extend("WeddingReply");
     var reply = new WeddingReply();
     reply.save(values).then(function(object) {
-        alert("yay! it worked");
+        $(".reply-form").hide();
+        $(".thanks").show();
     });
 
     return false;

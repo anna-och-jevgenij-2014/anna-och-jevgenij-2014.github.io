@@ -79,3 +79,7 @@ body {
     border: 5px solid #B83229;
     color: #222222;
 }
+.box.box-large.thanks{
+    display: none;
+    text-align: center;
+}
