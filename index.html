@@ -6,16 +6,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Anna & Jevgenij 2014</title>
+        <title>Anna &amp; Jevgenij 2014</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="icon" href="/favicon.ico" />
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates:700' rel='stylesheet' type='text/css'>
-        <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navbar.css">
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
@@ -26,7 +29,7 @@
         <![endif]-->
 
 
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="welcome">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -42,10 +45,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#welcome" class="glyphicon glyphicon-home"> Välkomna!</a></li>
-                        <li><a href="#wedding" class="glyphicon glyphicon-heart"> Bröllopet</a></li>
-                        <li><a href="#time" class="glyphicon glyphicon-calendar"> Tid</a></li>
-                        <li><a href="#place" class="glyphicon glyphicon-map-marker"> Plats</a></li>
-                        <li><a href="#osa" class="glyphicon glyphicon-envelope"> OSA</a></li>
+                        <li><a href="#ceremony" class="glyphicon glyphicon-heart"> Vigsel</a></li>
+                        <li><a href="#hogberga" class="glyphicon glyphicon-tree-deciduous"> Högberga</a></li>
+                        <li><a href="#practical" class="glyphicon glyphicon-check"> Praktiskt</a></li>
+                        <li><a href="#find-here" class="glyphicon glyphicon-map-marker"> Hitta hit</a></li>
+                        <li><a href="#reply" class="glyphicon glyphicon-envelope"> Svara</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -53,25 +57,23 @@
 
         <div class="container">
 
-            <div class="row" id="welcome">
+            <div class="row">
                 <div class="col-md-12 header">
-                    <h1>Vårt Bröllop</h1>
-                    <h2>Anna &amp; Jevgenij</h2>
+                    <h1>Anna &amp; Jevgenij</h1>
                 </div>
             </div>
-
 
             <div class="row">
                 <div class="col-md-8">
                     <section class="box color-1 lead">
-                        <h1>Välkomna till vårt bröllop.</h1>
+                        <h1>Snart är det dags...</h1>
                         <p>
-                            Och vår bröllopshemsida. Här kan ni tacka "ja" eller "nej" till inbjudan, senast den 20:e Juni
-                            och samtidigt ange om ni behöver specialkost eller vill ha alkoholfritt alternativ till maten.
-
+                            Med nära och kära, släkt och vänner. Med mycket dans och ännu mera kärlek.
+                            Den 23:e augusti går vårt bröllop av stapeln och vi hoppas att ni vill komma och fira med oss!
                         </p>
                         <p>
-                            Ni kan även läsa mer om festligheterna när, var och hur samt hitta vägbeskrivningar och kartor.
+                            Här kan ni läsa mer om festligheterna, hitta vägbeskrivningar och tacka "ja" eller "nej" till inbjudan senast den 20:e Juni.
+
                         </p>
                     </section>
                 </div>
@@ -83,7 +85,7 @@
             </div>
 
 
-            <div class="row" id="wedding">
+            <div class="row" id="ceremony">
                 <div class="col-md-4">
                     <section class="box images" data-img="http://res.cloudinary.com/jevgenij/image/upload/v1395344818/2012_DSC_3334_sc2a2l.jpg"></section>
                 </div>
@@ -98,83 +100,24 @@
             </div>
 
 
-            <div class="row">
-                <div class="col-md-4">
-                    <section class="box images-3-1"></section>
-                </div>
-
-                <div class="col-md-8">
-                    <section class="box color-2 lead">
-                        <h1>Bröllopet</h1>
-                        <p>
-                            Med nära och kära, släkt och vänner. Med mycket dans och ännu mera kärlek.
-                            Tillsammans gör vi det till en fantastisk fest!
-                        </p>
-                        <p>
-                            Vi hoppas att ni förstår att vi älskar alla era barn,
-                            men vi önskar att bröllopet ska vara barnfritt. Så att både vi och ni kan slappna
-                            av och njuta.
-                        </p>
-                    </section>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4">
-                    <section class="box images-4-1"></section>
-                </div>
+            <div class="row" id="hogberga">
 
                 <div class="col-md-4">
-                    <section class="box color-1 lead">
-                        <h1>Tal</h1>
-                        <p>
-                            text här om toast master...
-                        </p>
-                    </section>
+                    <section class="box images" data-img="http://placehold.it/300x300"></section>
                 </div>
 
-                <div class="col-md-4">
-                    <section class="box color-2 lead">
-                        <h1>Önskelista</h1>
-                        <p>
-                            text om presenter här...
-                        </p>
-                    </section>
-                </div>
-            </div>
-
-
-            <div class="row" id="time">
-                <div class="col-md-8">
-                    <section class="box images-5-1"></section>
-                </div>
-
-
-                <div class="col-md-4">
-                    <section class="box images-5-2"></section>
-                </div>
-            </div>
-
-
-            <div class="row"  id="place">
                 <div class="col-md-8">
                     <section class="box color-1 lead">
-                        <h1>Tid</h1>
+                        <h1>Vigseln</h1>
                         <p>
-                            Vigseln går av stapeln den 23 augusti klockan 16:00. Kom gärna redan vi 15.30 så att
-                            ni hinnar mingla och finna er till rätta.
+                            Vigseln kommer att hållas utomhus på Högberga gård och inledas med mingel från klockan 16:00.
+                            Själva vigselakten startar sedan klockan 16:30.
                         </p>
+
                         <p>
-                            Efter vigseln blir det brudskål och middag med efterföljande dans.
-                            Festen avslutas sedan vid klockan 02:00.
+                            Sång och musik under vigseln kommer att framförs av Sara Broman.
                         </p>
                     </section>
-                </div>
-
-
-                <div class="col-md-4">
-                    <section class="box images-5-2"></section>
                 </div>
             </div>
 
@@ -183,20 +126,17 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12">
-                            <section class="box color-2 lead">
-                                <h1>Plats</h1>
+                            <section class="box color-1 lead">
+                                <h1>Högberga</h1>
                                 <p>
-                                    Högberga gård på Lidingö.
-                                    Här håller vi både vigseln, middagen och festen.
+                                    Vigsel på terassen med utsikt över inloppet till staden.
+                                    Middag och fest i Galleriet och närbelägna Kinarummet.
                                 </p>
                             </section>
                         </div>
-                        <div class="col-md-12">
-                            <section class="box color-1 lead">
-                                <p>
-                                    Gården har en fantastisk utsik över inloppet till staden och vigseln
-                                    kommer att hållas utomhus i trädgården on vädret tillåter.
-                                </p>
+                        <div class="col-md-12" id="practical">
+                            <section class="box images" data-img="http://placehold.it/300x300">
+
                             </section>
                         </div>
 
@@ -211,16 +151,16 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <section class="box images-7-1"></section>
+                    <section class="box images" data-img="http://res.cloudinary.com/jevgenij/image/upload/v1395495297/hotellrum-hg-008_w2g2b1.jpg"></section>
                 </div>
 
                 <div class="col-md-8">
-                    <section class="box color-2 lead">
+                    <section class="box color-1 lead">
                         <h1>Sova över</h1>
                         <p>
                             Det finns möjlighet för alla som vill att övernatta till självkostnadspris.
-                            Enkelrum för 750kr och dubbelrum 1350kr inklusive frukost.<br>
-                            Incheckning från klockan 15:00.
+                            Enkelrum för 750kr och dubbelrum för 1350kr, inklusive frukost.<br>
+                            Incheckning kan ske från klockan 15:00.
                         </p>
                         <p>
                             Anmäl önskemål om rum i samband med ert svar nedan
@@ -232,6 +172,76 @@
 
 
             <div class="row">
+
+                <div class="col-md-8">
+                    <section class="box color-1 lead">
+                        <h1>Presenter</h1>
+                        <p>
+                            Vi blir glada om ni kommer och har roligt!
+                        </p>
+                        <p>
+                            Vill ni utöver detta lämna ett bidrag till bröllopsresan så är det förstås också uppskattat.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-md-4">
+                    <section class="box images" data-img="http://placehold.it/300x300"></section>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <section class="box images" data-img="http://placehold.it/300x300"></section>
+                </div>
+
+                <div class="col-md-4">
+                    <section class="box images" data-img="http://placehold.it/300x300">
+
+                    </section>
+                </div>
+
+
+                <div class="col-md-4">
+                    <section class="box color-1 lead">
+                        <h1>Tal</h1>
+                        <p>
+                            Vill du hålla tal?
+                        </p>
+                        <p>
+                            Anmäl dig till någon av våra toastmasters:
+                        </p>
+                        <p>
+                            Johan Nyman eller <br>
+                            Julia Tsoi.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+
+
+            <div class="row" id="find-here">
+                <div class="col-md-8">
+                    <section class="box color-1 lead">
+                        <h1>Barn</h1>
+                        <p>
+                            Vi älskar självklart barn, men önskar att bröllopet ska vara för oss vuxna. Vi hoppas att ni har förståelse för det.
+                        </p>
+                        <p>
+                            Om ni vill ta med spädbarn för att de måste ammas så gör vi förstås undantag för dem, men kontakta oss gärna innan.
+                        </p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="box images" data-img="http://placehold.it/300x300"></section>
+                </div>
+            </div>
+
+
+            <div class="row" id="reply">
                 <div class="col-md-8">
                     <section class="box box-large color-1 map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130212.20318121862!2d18.203525649999992!3d59.34020479999954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f825a3699e74b%3A0xa065b2adf9ca75af!2zSMO2Z3VkZHN2w6RnZW4gNjQ!5e0!3m2!1sen!2sse!4v1394483383703" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
@@ -244,20 +254,20 @@
                             <section class="box color-1 lead">
                                 <h1>Hitta hit</h1>
                                 <p>
-                                    För att ta sig till Högberga gäller bil, buss eller taxi.
+                                    Buss från Ropsten till Högberga eller Seglarvägen.
                                 </p>
                                 <p>
-                                    Det finns ett tiotal parkeringsplatser för bilar.
-                                    Bussar går mot Högberga från Ropsten.
+                                    Det finns även ett tiotal parkeringsplatser för bilar.
                                 </p>
                             </section>
                         </div>
                         <div class="col-md-12">
-                            <section class="box images-8-1"></section>
+                            <section class="box images" data-img="http://placehold.it/300x300"></section>
                         </div>
                     </div>
                 </div>
             </div>
+
 
 
             <div class="row" id="osa">
@@ -265,43 +275,45 @@
                     <div class="row">
                         <div class="col-md-12">
                             <section class="box color-1 lead">
-                                <h1>Hitta hit</h1>
+                                <h1>Svara</h1>
                                 <p>
-                                    För att ta sig till Högberga gäller bil, buss eller taxi.
+                                    Tacksam för svar senast 20:e Juni.
                                 </p>
                                 <p>
-                                    Det finns ett tiotal parkeringsplatser för bilar.
-                                    Bussar går mot Högberga från Ropsten.
+                                    Glöm inte eventuella önskemål, samt specialkost.
                                 </p>
                             </section>
                         </div>
                         <div class="col-md-12">
-                            <section class="box images-8-1"></section>
+                            <section class="box images" data-img="http://placehold.it/300x300">
+
+                            </section>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-8">
-                    <section class="box box-large color-1">
+                    <section class="box box-large reply-form">
 
 
                         <form class="form-horizontal" id="reply-form">
                             <fieldset>
 
-                                <!-- Form Name -->
-
-                                <h2>
-                                    Tacksam för svar senast 20:e Juni.
-                                </h2>
-                                <hr>
                                 <!-- Text input-->
                                 <div class="form-group">
                                     <input id="email" name="email" type="text" placeholder="email">
+                                    <label class="col-md-12" for="confirmation">Mail (för bekräftelse):</label>
+                                    <div class="col-md-12">
+                                        <input id="confirmation" name="confirmation" type="text" placeholder="Din e-mail" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="col-md-12" for="name">Gäst(er):</label>
                                     <div class="col-md-12">
                                         <input id="name" name="name" type="text" placeholder="Era/Ditt Namn" class="form-control input-md" required="">
                                     </div>
                                 </div>
+
 
                                 <!-- Multiple Radios (inline) -->
                                 <div class="form-group">
@@ -352,12 +364,14 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            //ga('create', 'UA-49612044-1', 'anna-och-jevgenij-2014.com');
+            //ga('send', 'pageview');
+
         </script>
 
         <script src="scripts/main.js"></script>
