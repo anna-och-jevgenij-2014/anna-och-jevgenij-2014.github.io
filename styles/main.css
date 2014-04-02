@@ -20,12 +20,16 @@ h1, h2, h3 {
 }
 
 body {
-    padding-top: 70px;
+    padding: 70px 0;
     background-color: #F3F1E5;
     font-family: "Open Sans", sans-serif;
 }
 
-
+.header,
+.footer,
+.box{
+    position: relative;
+}
 
 .header{
     padding: 60px 0px;
@@ -39,6 +43,9 @@ body {
     color: #B83229;
 }
 
+.footer{
+    text-align: center;
+}
 
 .navbar-outer{
     max-width: 920px;
@@ -83,3 +90,45 @@ body {
     display: none;
     text-align: center;
 }
+
+.backdrop{
+    z-index: -1024;
+    position: absolute;
+}
+
+.backdrop.mirror{
+    -ms-transform: scale(-1, 1); /* IE 9 */
+    -webkit-transform: scale(-1, 1); /* Chrome, Safari, Opera */
+    transform: scale(-1, 1);
+}
+
+.backdrop.flip{
+    -ms-transform: scale(1, -1); /* IE 9 */
+    -webkit-transform: scale(1, -1); /* Chrome, Safari, Opera */
+    transform: scale(1, -1);
+}
+
+.backdrop.flip.mirror{
+    -ms-transform: scale(-1, -1); /* IE 9 */
+    -webkit-transform: scale(-1, -1); /* Chrome, Safari, Opera */
+    transform: scale(-1, -1);
+}
+
+.backdrop.rot-15{
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.backdrop.rot-30{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.backdrop.rot-45{
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
