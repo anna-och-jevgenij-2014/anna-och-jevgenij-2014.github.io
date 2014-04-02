@@ -24,7 +24,7 @@ $(".images").each(function(index, element){
 $(".btn").button();
 
 $(".navbar a").smoothScroll({
-    offset: 50
+    offset: 250
 });
 
 
