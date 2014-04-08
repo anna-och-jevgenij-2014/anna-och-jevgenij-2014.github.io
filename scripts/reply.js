@@ -1,5 +1,5 @@
 Parse.initialize("sbvjVEY7RR8pDyYAwxQbuBd8qbYyxJPZZ3lcxOf2", "VhUUULfEt0pJaZG8jm0lBIdbJ1IlKaIzjNnd9iNj");
-
+var WeddingReply = Parse.Object.extend("WeddingReply");
 
 $(".images").each(function(index, element){
 
@@ -23,8 +23,20 @@ $(".images").each(function(index, element){
 
 $(".btn").button();
 
-$(".navbar a").smoothScroll({
-    offset: 250
+var replyId = window.location.hash.substring(1),
+    query = new Parse.Query(WeddingReply);
+
+query.get(replyId, {
+    success: function(reply) {
+        $('#name').val(reply.get("name"));
+        $('#wishes').val(reply.get("wishes"));
+        $("#reply-form input[type=radio][value='" + reply.get("anwser") + "']").click();
+        window.reply = reply;
+    },
+    error: function(object, error) {
+        $("form").hide();
+        $("#not-found-notification").fadeIn();
+    }
 });
 
 
@@ -37,17 +49,18 @@ $('#reply-form').submit(function(){
     }
 
     var values = {
-        email: $('#confirmation').val(),
-        name: $('#name').val(),
+        name: $.trim($('#name').val()),
         anwser: $('#reply-form input[type=radio]:checked').val(),
-        wishes: $('#wishes').val()
+        wishes: $.trim($('#wishes').val())
     };
 
-    var WeddingReply = Parse.Object.extend("WeddingReply");
-    var reply = new WeddingReply();
+    var reply = window.reply;
     reply.save(values).then(function(object) {
-        $(".reply-form").hide();
-        $(".thanks").show();
+        $('#submit').hide();
+        $("#saved-notification").fadeIn();
+        setTimeout(function(){
+            location.reload();
+        }, 3000);
     });
 
     return false;

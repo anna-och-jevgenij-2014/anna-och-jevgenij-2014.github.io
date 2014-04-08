@@ -76,6 +76,7 @@ body {
 
 .box.map{
     padding: 5px;
+    /**background-color: #c54b47;**/
 }
 
 #email{
@@ -94,6 +95,11 @@ body {
     display: none;
     text-align: center;
     color: #c54b47;
+}
+
+#saved-notification,
+#not-found-notification{
+    display: none;
 }
 
 .backdrop{

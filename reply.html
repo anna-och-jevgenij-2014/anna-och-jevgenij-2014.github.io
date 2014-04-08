@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Anna &amp; Jevgenij 2014</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="/favicon.ico" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
+        <link href='//fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="styles/index.css">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1>Ditt svar</h1>
+                </div>
+            </div>
+
+            <div class="row" id="osa">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="box color-1 lead">
+                                <h1>Ditt svar</h1>
+                                <p>
+                                    Du kan ändra ditt svar fram till den 20 Juni.
+                                </p>
+                                <p>
+                                    Glöm inte eventuella önskemål, samt specialkost.
+                                </p>
+                                <img class="backdrop rot-30" src="assets/flower-plain.svg" height="250" style="left: -200px; top: 0px">
+                                <img class="backdrop" src="assets/butterfly-top-plain.svg" height="100" style="left: -70px;bottom: 10px; z-index: 100">
+
+                            </section>
+                        </div>
+                        <div class="col-md-12">
+                            <section class="box images" data-img="http://res.cloudinary.com/jevgenij/image/upload/c_fill,g_west,h_300,w_300/v1396387011/https_www_firstoptiononline_com_wp-content_uploads_2013_05_Hand-Written-Letter_bxdo0w.jpg">
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+
+
+                    <section class="box box-large reply-form">
+                        <div class="alert alert-danger" id="not-found-notification">
+                            Oj, nånting gick snett, vi kunde inte hitta ditt svar,
+                            kontakta oss via telefon instället.
+                        </div>
+
+                        <form class="form-horizontal" id="reply-form">
+                            <fieldset>
+
+                                <!-- Text input-->
+                                <input id="email" name="email" type="text" placeholder="email">
+                                <div class="form-group">
+                                    <label class="col-md-12" for="name">Gäst(er):</label>
+                                    <div class="col-md-12">
+                                        <input id="name" name="name" type="text" placeholder="Era/Ditt Namn" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+
+
+                                <!-- Multiple Radios (inline) -->
+                                <div class="form-group">
+                                    <label class="col-md-12" for="svar-btn">Svar:</label>
+                                    <div class="col-md-12" id="svar-btn">
+                                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="svar" id="option-yes" value="Yes">Ja! Vi / jag kommer.
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="svar" id="option-no" value="No">Tyvärr, vi / jag kan inte.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="form-group">
+                                    <label class="col-md-12" for="wishes">Önskemål:</label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" id="wishes" name="wishes" rows="10"
+                                                  placeholder="Önskemål om specialkost,  alkoholfria alternativ, bokning av rum. =)"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <button id="submit" name="submit" class="btn btn-success btn-block" data-loading-text="Uppdaterar svar ...">Uppdatera</button>
+                                    </div>
+                                </div>
+                                <div class="alert alert-success" id="saved-notification">
+                                    Ditt svar har blivit uppdaterad. Tack. =)
+                                </div>
+
+                            </fieldset>
+                        </form>
+                        
+                    </section>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <img class="backdrop mirror" src="assets/twigs-plain.svg" width="720" height="180" style="top:-75px;left: 360px">
+                    <img class="backdrop" src="assets/twigs-plain.svg" width="720" height="180" style="top:-75px;right: 360px">
+                </div>
+            </div>
+        
+        </div>
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="libs/jquery.backstretch/js/jquery.backstretch.min.js"></script>
+
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-49612044-1', 'anna-och-jevgenij-2014.com');
+            ga('send', 'pageview');
+
+        </script>
+
+        <script src="scripts/reply.js"></script>
+</body>
+</html>
