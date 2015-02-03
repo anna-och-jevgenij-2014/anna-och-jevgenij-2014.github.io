@@ -142,3 +142,7 @@ body {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.gallery_1{
+    cursor: pointer;
+}
